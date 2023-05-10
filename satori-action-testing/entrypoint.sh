@@ -4,6 +4,6 @@ npm install -g botium-cli
 
 botium-cli init
 
-botium-cli run
+botiumOutput=$(botium-cli run 2>&1)
 
-ls
+echo "$botiumOutput" >> "${GITHUB_STEP_SUMMARY}"
