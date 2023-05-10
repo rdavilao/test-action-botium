@@ -1,3 +1,5 @@
 #!/bin/bash 
 
-echo "Hola, si funciona"
+botium-cli init
+
+ls
