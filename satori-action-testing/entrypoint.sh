@@ -4,4 +4,4 @@ rasa --version
 
 rasa train
 
-rasa run
+ls
