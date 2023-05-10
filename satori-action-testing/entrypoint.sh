@@ -2,4 +2,6 @@
 
 rasa --version
 
-echo ""Ver
+rasa train
+
+rasa run

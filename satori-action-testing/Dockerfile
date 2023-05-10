@@ -1,4 +1,4 @@
-FROM rasa/rasa:1.10.14-full
+FROM rasa/rasa:1.10.25-full
 COPY entrypoint.sh /entrypoint.sh
 USER root
 RUN chmod +x /entrypoint.sh
