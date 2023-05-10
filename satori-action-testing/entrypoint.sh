@@ -1,5 +1,7 @@
 #!/bin/bash 
 
-node -v
+npm install -g botium-cli
+
+botium-cli init
 
 ls
