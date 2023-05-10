@@ -1,5 +1,5 @@
 #!/bin/bash 
 
-botium-cli init
+node -v
 
 ls
