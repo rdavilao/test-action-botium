@@ -4,4 +4,8 @@ rasa --version
 
 rasa train
 
-ls
+rasa shell
+
+hi
+
+/stop
