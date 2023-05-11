@@ -4,11 +4,7 @@ rasa --version
 
 rasa train
 
-rasa shell
+rasa run &
 
-hi
-
-/stop
-
-
+echo "VER"
 exit 0
