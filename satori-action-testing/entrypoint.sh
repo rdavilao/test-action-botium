@@ -2,9 +2,11 @@
 
 rasa --version
 
+echo "::group::Rasa train"
+echo "Running 'rasa train' command"
 rasa train
+echo "::endgroup::"
+
 
 rasa run &
-
-echo "VER"
 exit 0
