@@ -1,5 +1,5 @@
 FROM rasa/rasa:1.10.25-full
-RUN apk update && apk upgrade --available
+RUN apt update && apt upgrade --available
 COPY entrypoint.sh /entrypoint.sh
 USER root
 RUN chmod +x /entrypoint.sh
