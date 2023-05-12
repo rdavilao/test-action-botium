@@ -9,6 +9,9 @@ echo "::endgroup::"
 rasa run &
 echo "Rasa run"
 node -v
+
+mkdir botium-test
+cd botium-test
 botium-cli init
 ls
 exit 0
