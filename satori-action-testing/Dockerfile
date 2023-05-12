@@ -5,7 +5,7 @@ RUN apt-get install curl -y
 RUN apt-get install nodejs -y
 RUN apt-get install npm -y
 RUN npm install -g botium-cli
-RUN apt-get install python3.7
+RUN apt-get install python3.7 -y
 run pip install rasa==1.10.25
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
