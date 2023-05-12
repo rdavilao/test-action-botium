@@ -1,6 +1,6 @@
-FROM rasa/rasa:1.10.25-full
+FROM ubuntu:latest
 COPY entrypoint.sh /entrypoint.sh
-USER root
-RUN apt-get update -y
+RUN apt-get update && apt-get upgrade
+RUN apt-get install nodejs
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
