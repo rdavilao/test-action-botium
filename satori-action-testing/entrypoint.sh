@@ -8,4 +8,5 @@ rasa train
 echo "::endgroup::"
 rasa run &
 echo "Rasa run"
+node -v
 exit 0
