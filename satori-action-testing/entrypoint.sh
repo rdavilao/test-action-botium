@@ -14,6 +14,6 @@ echo "::endgroup::"
 rasa run &
 echo "Rasa run"
 node -v
-botium-init
+botium-cli init
 ls
 exit 0
