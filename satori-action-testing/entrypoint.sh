@@ -8,7 +8,6 @@ rasa train
 echo "::endgroup::"
 rasa run &
 echo "Rasa run"
-node -v
 
 mkdir botium-test
 cd botium-test
