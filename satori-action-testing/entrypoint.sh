@@ -1,6 +1,7 @@
 #!/bin/bash 
 
 nvm install 15.14.0 
+nvm use 15.14.0
 apt-get install npm -y
 npm install -g botium-cli
 
