@@ -2,9 +2,7 @@
 
 rasa --version
 
-pip --version
-
-python --version
+node -v
 
 echo "::group::Rasa train"
 echo "Running 'rasa train' command"
