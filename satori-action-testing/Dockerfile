@@ -8,7 +8,7 @@ RUN apt-get install npm -y
 RUN npm install -g botium-cli
 RUN add-apt-repository ppa:deadsnakes/ppa
 RUN apt-get install python3.7 -y
-RUN apt-get install python3-pip
+RUN apt-get install python3-pip -y
 RUN pip install rasa==1.10.25
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
