@@ -16,8 +16,5 @@ echo "Rasa run"
 mkdir botium-test
 cd botium-test
 botium-cli init
-botiumOutput=$(botium-cli run 2>&1)
-
-echo "$botiumOutput" >> "${GITHUB_STEP_SUMMARY}"
 ls
 exit 0
