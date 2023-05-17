@@ -20,6 +20,3 @@ runs:
   args:
     - ${{ inputs.format }}
     - ${{ inputs.version }}
-  steps:
-    - name: Checkout del repositorio
-      uses: actions/chechkout@v3
