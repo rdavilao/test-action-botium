@@ -19,7 +19,7 @@ else
     botium-cli init
 fi
 
-botiumOutput=$(botium-cli run 2>&1)
+botiumOutput=$(botium-cli hello 2>&1)
 
 echo "$botiumOutput" >> "${GITHUB_STEP_SUMMARY}"
 ls
