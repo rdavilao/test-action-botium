@@ -12,14 +12,13 @@ rasa run --enable-api &
 echo "Rasa run"
 
 if [ -d "/botium-test" ]; then
-    echo "Existe"
+    cd botium-test
 else
-    echo "No existe"
     mkdir botium-test
     cd botium-test
+    botium-cli init
 fi
 
-botium-cli init
 botiumOutput=$(botium-cli run 2>&1)
 
 echo "$botiumOutput" >> "${GITHUB_STEP_SUMMARY}"
