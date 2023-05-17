@@ -9,4 +9,5 @@ jobs:
       
       - uses: ./satori-action-testing/.
         with:
-          format: "Dialogflow"
+          format: "Rasa"
+          version: 1.10.x

@@ -19,6 +19,7 @@ else
     botium-cli init
 fi
 
+echo "$INPUT_VERSION"
 botiumOutput=$(botium-cli hello 2>&1)
 
 echo "$botiumOutput" >> "${GITHUB_STEP_SUMMARY}"
