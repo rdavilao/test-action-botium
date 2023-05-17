@@ -16,7 +16,10 @@ outputs:
     description: 'Contenido del Dockerfile modificado' 
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'Dockerfile'  
   args:
     - ${{ inputs.format }}
     - ${{ inputs.version }}
+  steps:
+    - name: Checkout del repositorio
+      uses: actions/chechkout@v3
