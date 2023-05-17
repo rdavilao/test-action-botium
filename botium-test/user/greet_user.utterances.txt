@@ -1,0 +1,10 @@
+GREET_USER
+hi
+hello
+hey
+Good Morning
+good evening
+hey there
+just going to say hi
+greetings
+long time no see
