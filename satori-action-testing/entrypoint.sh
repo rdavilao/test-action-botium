@@ -20,8 +20,7 @@ else
 fi
 
 echo "$INPUT_VERSION"
-botiumOutput=$(botium-cli run 2>&1)
+botium-cli run 
 
-echo "$botiumOutput" >> "${GITHUB_STEP_SUMMARY}"
 ls
 exit 0
