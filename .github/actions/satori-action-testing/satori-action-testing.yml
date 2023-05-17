@@ -1,0 +1,22 @@
+name: 'Testing chatbot with botium'
+description: 'Apply botium testing to check the quality of your chatbot'
+inputs:
+  format:
+    description: 'Chatbot technology used'
+    required: true
+  version:
+    description: 'Version of techonology used'
+    required: true
+  repository:
+    description: 'Repository name with owner'
+    required: true
+    default: ${{ github.repository }} 
+outputs:
+  modified-dockerfile:
+    description: 'Contenido del Dockerfile modificado' 
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.format }}
+    - ${{ inputs.version }}
