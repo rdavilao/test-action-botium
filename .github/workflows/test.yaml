@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - uses: ./satori-action-testing/.
+      - uses: ./.github/actions/satori-action-testing/.
         with:
           format: "Rasa"
           version: 1.10.x
