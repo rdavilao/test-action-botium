@@ -10,5 +10,6 @@ RUN npm cache clean -f
 RUN npm install -g n
 RUN n stable
 RUN npm install -g botium-cli
+RUN npm install -g botium-connector-rasa
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
