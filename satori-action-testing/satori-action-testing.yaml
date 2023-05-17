@@ -10,10 +10,27 @@ inputs:
   repository:
     description: 'Repository name with owner'
     required: true
-    default: ${{ github.repository }}  
+    default: ${{ github.repository }} 
+outputs:
+  modified-dockerfile:
+    description: 'Contenido del Dockerfile modificado' 
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.format }}
-    - ${{ inputs.version }}
+  using: 'composite'
+  steps:
+    - name: Modificar Dockerfile
+      run: |
+        # Obtener el valor de entrada
+        FROM=${{ inputs.format }}
+        
+        # Generar el contenido modificado del Dockerfile
+        if [ "$FROM" = "Rasa" ]; then
+          MODIFIED_DOCKERFILE=$(sed 's/FROM .*/FROM imagen1/' Dockerfile)
+        elif [ "$FROM" = "valor2" ]; then
+          MODIFIED_DOCKERFILE=$(sed 's/FROM .*/FROM imagen2/' Dockerfile)
+        else
+          echo "Valor de entrada no válido"
+          exit 1
+        fi
+        
+        # Imprimir el contenido modificado del Dockerfile
+        echo "::set-output name=modified-dockerfile::$MODIFIED_DOCKERFILE"
